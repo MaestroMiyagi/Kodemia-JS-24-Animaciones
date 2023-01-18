@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .card_box {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background: linear-gradient(170deg, #2d2d57 0%, #0747d1 100%);
+    
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .card_box:hover {
+    transform: scale(1.1);
+  }
+  
+  .card_box::after {
+    content: "Subscribe";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #000000;
+    color: #fff;
+    height: 2.5em;
+    width: 180px;
+    border-radius: 20px;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+   }
+
+   .card_box:hover::after {
+    bottom: 0;
+   }
+
+  
+  
