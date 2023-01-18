@@ -1,45 +1,68 @@
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display';
+    font-weight: bold;
     overflow: hidden;
-  }
-  
-  .card_box {
-    width: 200px;
-    height: 250px;
-    border-radius: 20px;
-    background: linear-gradient(170deg, #2d2d57 0%, #0747d1 100%);
-    
-    position: relative;
-    cursor: pointer;
-    transition: all .3s;
-  }
-  
-  .card_box:hover {
-    transform: scale(1.1);
-  }
-  
-  .card_box::after {
-    content: "Subscribe";
-    padding-top: 1.25em;
-    padding-left: 1.25em;
-    position: absolute;
-    left: 0;
-    bottom: -60px;
-    background: #000000;
+ }
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #323644;
+}
+p, ol{
     color: #fff;
-    height: 2.5em;
-    width: 180px;
-    border-radius: 20px;
-    transition: all 80ms;
-    font-weight: 600;
-    text-transform: uppercase;
-   }
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-   .card_box:hover::after {
-    bottom: 0;
-   }
+}
 
-  
-  
+.card_box {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  background: linear-gradient(170deg, #2d2d57 0%, #0747d1 100%);
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card_box:hover {
+  transform: scale(0.9);
+}
+
+.card_box::after {
+  content: "Subscribe";
+  padding-top: 1.25em;
+  padding-left: 1.25em;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  background: #000000;
+  color: #fff;
+  height: 2.5em;
+  width: 180px;
+  border-radius: 20px;
+  transition: all 80ms;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card_box:hover::after {
+  bottom: 0;
+}
+
+.type {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    color: #fff;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
