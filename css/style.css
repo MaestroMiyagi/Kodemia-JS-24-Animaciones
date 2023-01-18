@@ -13,13 +13,17 @@ body{
     background-color: #323644;
 }
 p, ol{
+    letter-spacing: .1em;
     color: #fff;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-left: 2rem;
 }
 
 .card_box {
@@ -57,12 +61,7 @@ p, ol{
   bottom: 0;
 }
 
-.type {
+.plan-type {
     font-size: 2rem;
     font-weight: 500;
-    letter-spacing: .1em;
-    color: #fff;
-    align-items: center;
-    align-content: center;
-    text-align: center;
 }
