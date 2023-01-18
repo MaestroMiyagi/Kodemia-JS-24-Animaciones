@@ -20,7 +20,9 @@ Esta es mi solución para el ejercicio de clase
 
 ### Acerca del reto
 
+### Screenshot
 
+![](./images/Screenshot.png)
 
 
 ### Recursos utiles
