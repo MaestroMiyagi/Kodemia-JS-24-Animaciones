@@ -31,7 +31,9 @@ p, ol{
   width: 200px;
   height: 250px;
   border-radius: 20px;
-  
+  border-color: #afafaf;
+  border-style: solid;
+  border-width: 2px;
   position: relative;
   cursor: pointer;
   transition: all 0.3s;
@@ -43,16 +45,16 @@ p, ol{
 
 .card_box::after {
   content: "Subscribe";
-  padding-top: 1.25em;
-  padding-left: 1.25em;
+  padding-top: 1em;
+  padding-left: 1em;
   position: absolute;
   left: 0;
   bottom: -60px;
-  background: #000000;
-  color: #fff;
-  height: 2.5em;
+  background: #afafaf;
+  color: #000;
+  height: 2em;
   width: 180px;
-  border-radius: 20px;
+  border-radius: 15px;
   transition: all 80ms;
   font-weight: 600;
   text-transform: uppercase;
@@ -63,7 +65,7 @@ p, ol{
 }
 
 .plan-type {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -78,7 +80,7 @@ p, ol{
 }
 
 .card1{
-    background: linear-gradient(170deg, #4c4c81 0%, #0747d1 100%);
+    background: linear-gradient(to right, #353655, #14208b);
 }
 
 .card2{
